@@ -9,3 +9,7 @@ arch:
   - armhf
   - armv7
   - i386
+options:
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIyYmYxMjUzMWJlMDM0ODdlYjA5MzU3MjRhMDAxYzBiOCIsImlhdCI6MTY5NjkxMzMzNCwiZXhwIjoyMDEyMjczMzM0fQ.EmJ1qh1RyjrtSr9cE1o8psdmVCQuT_dUkl4K-A5GIzI
+schema:
+  token: str

@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start Model
+# ==============================================================================
+
+TOKEN=$(bashio::config 'token')
+
+bashio::log.info "Starting Model..."
+
+exec python3 /usr/bin/model.py \
+    "${TOKEN}" 
