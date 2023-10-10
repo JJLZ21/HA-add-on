@@ -4,7 +4,7 @@ version: "1.0.0"
 slug: "hello_world"
 init: false
 arch:
-  # - aarch64
+  - aarch64
   - amd64
   - armhf
   - armv7
