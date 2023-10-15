@@ -1,6 +1,8 @@
-FROM ghcr.io/hassio-addons/debian-base:6.2.3
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
-
+# Execute during the build of the image
 RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -8,10 +10,9 @@ RUN \
     python3-pip \
     \
     && pip3 install --no-cache-dir \
-    tensorflow \
     requests==2.31.0 \
     \
     && rm -rf /var/lib/apt/lists/*
 
-CMD ["echo", "done!"]
-# COPY rootfs /
+# Copy root filesystem
+COPY rootfs /
