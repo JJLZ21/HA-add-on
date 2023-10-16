@@ -51,7 +51,7 @@ for entity in entity_list:
         features.append(entity_state)
         # print(f"Entity State: {entity_state}")
     else:
-        features.append(entity)
+        features.append(response.status_code)
         # print(f"Failed to retrieve entity state: {response.status_code}")
 
 
