@@ -41,7 +41,7 @@ second = now.second
 time_in_day = categorize_time_of_day(hour)
 day_in_week = datetime.datetime.today().weekday()
 
-for entity in entity_str_list:
+for entity in entity_list:
     response = requests.get(f"{api_url}/states/{entity}", headers=headers)
 
     # Check the response and extract the state
