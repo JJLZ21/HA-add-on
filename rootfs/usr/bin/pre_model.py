@@ -6,7 +6,7 @@ token = sys.argv[1]
 # Define the entity you want to retrieve data from
 entity_str_list = sys.argv[2]
 # token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIyYmYxMjUzMWJlMDM0ODdlYjA5MzU3MjRhMDAxYzBiOCIsImlhdCI6MTY5NjkxMzMzNCwiZXhwIjoyMDEyMjczMzM0fQ.EmJ1qh1RyjrtSr9cE1o8psdmVCQuT_dUkl4K-A5GIzI"
-
+print(type(entity_str_list))
 print(entity_str_list)
 # Define Home Assistant API URL
 api_url = "http://192.168.1.106:8123/api"
