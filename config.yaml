@@ -12,7 +12,40 @@ options:
     - binary_sensor.dinning_room_sensor_presence
     - binary_sensor.hallway_motion_and_intensity_sensor_occupancy
     - binary_sensor.jack_room_sensor_presence
+    - binary_sensor.kevin_room_sensor_occupancy
+    - binary_sensor.kitchen_sensor_presence
+    - binary_sensor.living_room_sensor_presence
+    - binary_sensor.mom_room_motion_and_intensity_sensor_occupancy
+    - binary_sensor.stair_light_sensor_contact
+    - binary_sensor.stair_sensor_occupancy
+    - light.dinning_room_dimmer
+    - light.living_room_dimmer
+    - sensor.dinning_room_dimmer_brightness
+    - sensor.dinning_room_illumination_intensity_brightness_state
+    - sensor.dinning_room_illumination_intensity_illuminance_lux
+    - sensor.hallway_restroom_sensor_human_status
+    - sensor.living_room_dimmer_brightness
+    - sensor.living_room_illumination_intensity_brightness_state
+    - sensor.living_room_illumination_intensity_illuminance_lux
+    - switch.front_door_light_switch
+    - switch.hallway_restroom_switch
+    - switch.hallway_switch
+    - switch.jack_room
+    - switch.kevin_room_door_switch
+    - switch.kitchen_2_gang_light_l1
+    - switch.kitchen_2_gang_light_l2
+    - switch.mom_room_light
+    - switch.mom_room_restroom_light
+    - switch.open_close
+  out_entities:
+    - light.dinning_room_dimmer
+    - light.living_room_dimmer
+    - switch.jack_room
+    - switch.kitchen_2_gang_light_l2
+
 schema:
   token: str
   entities:
+    - str
+  out_entities:
     - str

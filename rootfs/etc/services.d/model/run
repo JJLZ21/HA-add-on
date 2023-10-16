@@ -9,6 +9,7 @@
 ## Run your program
 TOKEN=$(bashio::config 'token')
 ENTITIES=$(bashio::config 'entities')
+OUT_ENTITIES=$(bashio::config 'out_entities')
 
 bashio::log.info "Starting Model..."
 

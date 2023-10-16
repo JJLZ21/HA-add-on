@@ -2,13 +2,16 @@ import requests
 import sys
 import datetime
 
+# Define the input you want to retrieve data from
 token = sys.argv[1]
-# Define the entity you want to retrieve data from
+
 entity_str_list = sys.argv[2]
-# token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIyYmYxMjUzMWJlMDM0ODdlYjA5MzU3MjRhMDAxYzBiOCIsImlhdCI6MTY5NjkxMzMzNCwiZXhwIjoyMDEyMjczMzM0fQ.EmJ1qh1RyjrtSr9cE1o8psdmVCQuT_dUkl4K-A5GIzI"
 entity_list = entity_str_list.split("\n")
-print(type(entity_list))
-print(entity_list)
+
+out_entity_str_list = sys.argv[3]
+out_entity_list = out_entity_str_list.split("\n")
+
+
 # Define Home Assistant API URL
 api_url = "http://192.168.1.106:8123/api"
 
@@ -63,5 +66,19 @@ features.append(second)
 features.append(day_in_week)
 features.append(time_in_day)
 
-for f in features:
-    print(f"Entity State: {f}")
+print(features)
+print(out_entity_list)
+
+# prediction_api_url = "http://192.168.1.109:8080"
+# prediction_headers = {
+#     "Content-Type": "application/json",
+# }
+# data = features
+# array_str = ",".join(map(str, data))
+# payload = {"entities": array_str}
+# prediction = requests.get(
+#     f"{prediction_api_url}/predict", params=payload, headers=prediction_headers
+# )
+
+# for p in prediction:
+#     print(p)
