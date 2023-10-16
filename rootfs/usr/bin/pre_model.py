@@ -43,7 +43,7 @@ day_in_week = datetime.datetime.today().weekday()
 
 for entity in entity_list:
     response = requests.get(f"{api_url}/states/{entity}", headers=headers)
-
+    print(response)
     # Check the response and extract the state
     if response.status_code == 200:
         data = response.json()
