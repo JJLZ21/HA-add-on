@@ -14,4 +14,4 @@ OUT_ENTITIES=$(bashio::config 'out_entities')
 bashio::log.info "Starting Model..."
 
 exec python3 /usr/bin/pre_model.py \
-    "${TOKEN}" "${ENTITIES}" "${OUT_ENTITIES}
+    "${TOKEN}" "${ENTITIES}" "${OUT_ENTITIES}"
