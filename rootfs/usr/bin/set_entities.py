@@ -1,10 +1,10 @@
 import requests
 
 # Replace with your Home Assistant URL
-api_url = "http://192.168.1.106:8123/api"
+api_url = ""
 
 # Replace with your access token
-access_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIyYmYxMjUzMWJlMDM0ODdlYjA5MzU3MjRhMDAxYzBiOCIsImlhdCI6MTY5NjkxMzMzNCwiZXhwIjoyMDEyMjczMzM0fQ.EmJ1qh1RyjrtSr9cE1o8psdmVCQuT_dUkl4K-A5GIzI"
+access_token = ""
 
 headers = {
     "Authorization": f"Bearer {access_token}",
